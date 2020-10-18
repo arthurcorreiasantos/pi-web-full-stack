@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <table border="1">
+      <thead>
+        <tr><th colspan="2">Funcionalidades em Páginas HTML</th></tr>
+        <tr><th>Funcionalidades</th>
+        <th>Tags</th></tr>
+      </thead>
+
+      <tbody>
+        <td rowspan="5">Barra de Navegação</td>
+        <td>header</td>
+        <tr><td>nav</td</tr>
+        <tr><td>ul</td></tr>
+        <tr><td>li</td></tr>
+        <tr><td>a</td></tr>
+        <td rowspan="6">Tabelas</td>
+        <tr><td>table</td</tr>
+        <tr><td>thead</td</tr>
+      </tbody>
+    </table>
+
+    <section id="Images">
+      <figure>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/17/43/ac/8f/pelourinho.jpg" alt="Fotos de salvador" width="15%">
+        <figcaption>salvador</figcaption>
+      </figure>
+    </section>
+
+    <section id="forms-section">
+      <h2>Formulários</h2>
+      <form>
+        <div><label for="nome">Nome: </label><input type="text" placeholder="Seu Nome" name="nome" id="nome"></div>
+        <div><input type="number" name="número"></div>
+        <div><input type="password" name="senha"></div>
+        <div><input type="date" name="data"></div>
+        <div><input type="time"></div>
+        <div><input type="email"></div>
+        <div><input type="hidden"></div>
+        <div><label for="programador">Programador:</label><input type="checkbox" id="programador" checked></div>
+        <div><input type="range" min="0" max="100" value="0"></div>
+        <div><label for="arquivo">File:</label>
+          <input type="file" id="arquivo">
+        </div>
+
+        <select id="">
+          <option value="0" disabled selected>Selecione umas das opções</option>
+          <option value="1">Pi Web Full Stack</option>
+          <optgroup label="web">
+            <option value="2">Pi Data oito</option>
+            <option value="2">Pi Data sais</option>
+        </optgroup>
+        </select>
+
+        <input list="Olha">
+          <datalist id="cansada">
+            <option value="1">quero dormir</option>
+            <option value="1">quero dormir</option>
+          </datalist>
+        </input>
+        
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </form>
+
+    </section>
+
+  </main>
+</body>
+</html>
