@@ -1,0 +1,31 @@
+#body{
+ font-family: 'Quicksand', sans-serif;
+ margin: 1em 25em 25em 25em;
+ background-color: black;
+
+}
+
+#main{
+  background-color:#E3DFFF;
+}
+
+#title{
+  box-sizing: content-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4rem;
+  width: 15em;
+  color:#FBFBFF;
+  text-align: left;
+  }
+
+#subtitle{
+  margin-top: 1em;
+  font-size: 3rem;
+  color: #FBFBFF;
+  text-align: right;
+}
+
+#intro{
+  color: #FBFBFF;
+  text-align: justify;
+}
