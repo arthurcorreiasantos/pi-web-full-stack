@@ -3,28 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>imeio</title>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style q1.css">
 </head>
+
 <body>
-  <form action="#" method="POST">
-    <div>
-      <label for="email">E-mail: </label>
-      <input type="email" name="email">
-    </div>
-    <div>
-      <label for="senha">Senha: </label>
-      <input type="password" name="senha">
-    </div>
+  <header class="header">
+    <nav id="principal-bar">
+    </nav>
+  </header>
 
-    <div>
-      <label for="checkbox">Deseja manter-se conectado?</label>
-      <input name="checkbox" type="checkbox" value="Submeter"/>
-    </div>
-
-    <div>
-      <input name="submit" type="submit" value="Submeter"/>
-    </div>
-
-  </form>
+  <main class="box">
+    <section class="brand-text">
+      <h3><div>Bmail</div></h3>
+    </section>
+    <section class="subtitle-text">
+      <div>Fazer Login</div>
+      <div>Ir para o Bmail</div>
+    </section>
+    <section class="main-content">
+      <form action="#" method="POST" id="login-form">
+        <div id="email">
+          <label for="email">E-mail: </label>
+          <input type="email" name="email">
+        </div>
+        <div id="senha">
+          <label for="senha">Senha: </label>
+          <input type="password" name="senha">
+        </div>
+        <div id="checkbox">
+          <label for="checkbox" >Deseja manter-se conectado?</label>
+          <input name="checkbox" type="checkbox" value="Submeter"/>
+        </div>
+        <div id="submit-button">
+          <input name="submit" type="submit" value="Submeter"/>
+        </div>
+      </form>
+    </section>
+</main>
+<footer></footer>
 </body>
 </html>
