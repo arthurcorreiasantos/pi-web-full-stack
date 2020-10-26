@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&display=swap');
+
+html,
+body{
+  background-color: white;
+  font-family: 'Heebo', sans-serif;
+  width: 100%;
+  justify-content: center;
+}
+
+header #nav-bar{
+  width: 100%;
+  background-color:#EDF7FA;
+}
+
+header #nav-bar .nav-list{
+  display: flex; /*Transforma os itens da lista em conteúdos dos containers*/
+  list-style: none; /*Tira os marcadores da lista*/
+  justify-content: flex-end; /*Alinha o conteúdo da lista à direita*/
+  flex-wrap: wrap; /*Quebra de linha quando a visualização muda*/
+}
+
+header #nav-bar .nav-list li{
+  margin: 1.5rem 0.8rem;
+  align-content: center;
+}
+
+header #nav-bar .itens a{
+  text-decoration: none;
+  color:#00A8CC;
+  transition: 0.5s;
+}
+
+header #nav-bar .itens :hover{
+  font-weight: 900;
+  color: black;
+  transition: 0.5s;
+}
+
+header #main-header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin-top: 6rem;
+  flex-wrap: wrap-reverse;
+  flex: 1; /* Faz com que as caixas preencham o container até o limite máximo e depois quebra a linha*/
+
+}
+
+header #main-header #title-n-button{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 65%;
+}
+
+header #main-header #title-n-button .title h1{
+  font-size: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+header #main-header #title-n-button .header-text{
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+header #main-header #title-n-button .button-resume a input{
+  background-color:#FF6464;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 2%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 8px;
+  border-color: transparent;
+}
+
+header #main-header #image{
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+header #main-header #image .photo img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+header #main-header #image .photo :hover{
+  transition: 1s;
+  width: 200px;
+  height: 200px;
+}
+
+main #main-section .recent-posts{
+  background-color:#EDF7FA;
+  color: black;
+}
+
+main #main-section .recent-posts .main-section-bar .main-section-list{
+  display: flex;
+  background-color:#EDF7FA;
+  color: black;  
+  justify-content: space-between;
+  list-style: none; /*Tira os marcadores da lista*/
+  height: 2.5rem;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+main #main-section .recent-posts .main-section-bar a{
+  text-decoration: none;
+  color:#00A8CC;
+  font-size: 0.9rem;
+}
+
+main #main-section .recent-posts .recent-posts-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /*Alinha o conteúdo da lista à direita*/
+  background-color:#EDF7FA;
+  height: 400px;
+}
+
+main #main-section .recent-posts .recent-posts-content .box{
+  background-color: white;
+  width: 42%;
+  height: 70%;
+  padding: 45px;
+  flex-wrap: wrap;
+}
+
+main #main-section .recent-posts .recent-posts-content .box .box-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+main #main-section .recent-posts .recent-posts-content .box .subtitle-list-box{
+  display: flex;  
+  justify-content: space-evenly;
+  padding: 12px;
+}
+
+main #main-section .recent-posts .recent-posts-content .box .subtitle-list-box li{
+  list-style: none;
+}
