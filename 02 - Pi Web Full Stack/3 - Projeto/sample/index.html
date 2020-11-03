@@ -6,46 +6,56 @@
   <title>Home</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
   
 </head>
 <body>
   <header>
+
     <nav id="nav-bar">
+      <a href="#" class="home">Home</a>
       <ul class="nav-list">
-        <li class="nav-item1 itens"><a href="#">Works</a></li>
+        <li class="nav-item1 itens"><a href="works.html">Works</a></li>
         <li class="nav-item2 itens"><a href="#">Blog</a></li>
         <li class="nav-item3 itens"><a href="#">Contact</a></li>
       </ul>
+      <i class="fas fa-bars"></i>
     </nav>
+  </header>
 
-    <section id="main-header">
+  <main>
 
-      <section id="title-n-button">
+    <div id="cover">
+
+      <div id="title-n-button">
         <div class="title">
           <h1>Hi, I am Maria,<br>
           Creative Technologist</h1>
         </div>
-        <div class="header-text">
+        <div class="cover-text">
           <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
         <div class="button-resume">
-          <a href="#"><input type="button" value="Download Resume"></a>
+           
+              <a href="#" class="link-button">
+                <button class="button">Download Resume</button>
+              </a>
+            
         </div>
-      </section>
-
-      <section id="image">
+      </div>
+    
+      <div id="image">
         <div class="photo">
           <img src="https://miro.medium.com/fit/c/160/160/2*ZRdGysufUldIFow6VfRANw.jpeg" alt="photo" name="photo">
         </div>
-      </section>
+      </div>
 
-    </section>
-  </header>
-  <main>
+    </div>
+
     <section id="main-section">
 
       <div class="recent-posts">
-        
+
         <div class="main-section-bar">
           <ul class="main-section-list">
             <li class="bar-item1 bar-item">Recent Posts</li>
@@ -55,24 +65,32 @@
       
         <section class="recent-posts-content">
 
-          <div class="box">
-            <h1 class="box-title">Making a design system from scratch</h1>
-            <ul class="subtitle-list-box">
-              <li class="date box-item">12 Feb 2020</li>
-              <li class="separtor box-item">|</li>
-              <li class="subject box-item">Design, Pattern</li>
-            </ul>
-            <div class="box-text">
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          <div class="box1 box">
+
+              <div class="box-content">
+
+                <h1 class="box-title">Making a design system from scratch</h1>
+
+                  <ul class="subtitle-list-box">
+                    <li class="date box-item">12 Feb 2020</li>
+                    <li class="separtor box-item">|</li>
+                    <li class="subject box-item">Design, Pattern</li>
+                  </ul>
+
+                <div class="box-text">
+                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+
             </div>
+
           </div>
 
-          <div class="box">
-            <h1 class="box-title">Making a design system from scratch</h1>
+          <div class="box2 box">
+            <h1 class="box-title">Creating pixel perfect icons in Figma</h1>
             <ul class="subtitle-list-box">
               <li class="date box-item">12 Feb 2020</li>
               <li class="separtor box-item">|</li>
-              <li class="subject box-item">Design, Pattern</li>
+              <li class="subject box-item">Figma, Icon Design</li>
             </ul>
             <div class="box-text">
               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -80,11 +98,102 @@
           </div>
 
       </section>
+
       </div>
     </section>
+    <section id="featured-works">
+
+      <div class="title-featured-works">
+        Featured works
+      </div>
+
+      <section class="works">
+
+        <div class="work1 work">
+
+          <div class="work1-image work-image">
+            <img src="images/Rectangle 30.png" alt="Designing Dashboards">
+          </div>
+
+          <div class="work1-text work-text">
+            <div class="work1-title work-title">
+              Designing Dashboards
+            </div>
+            <ul class="work1-secline work-secline">
+              <li><div class="work1-year work-year">2020</div></li>
+              <li><div class="work1-year">|</div></li>
+              <li><div class="work1-subject work-subject">Dashboard</div></li>
+            </ul>
+            <div class="work1-main-text work-main-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="work2 work">
+
+          <div class="work2-image work-image">
+            <img src="images/Rectangle 32.png" alt="Designing Dashboards">
+          </div>
+
+          <div class="work2-text work-text">
+            <div class="work2-title work-title">
+              Vibrant Portraits of 2020
+            </div>
+            <ul class="work2-secline work-secline">
+              <li><div class="work2-year work-year">2018</div></li>
+              <li><div class="work2-year">|</div></li>
+              <li><div class="work2-subject work-subject">Illustration</div></li>
+            </ul>
+            <div class="work2-main-text work-main-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="work3 work">
+
+          <div class="work3-image work-image">
+            <img src="images/Rectangle 34.png" alt="Designing Dashboards">
+          </div>
+
+          <div class="work3-text work-text">
+            <div class="work3-title work-title">
+              36 Days of Malayalam type
+            </div>
+            <ul class="work3-secline work-secline">
+              <li><div class="work3-year work-year">2018</div></li>
+              <li><div class="work3-year">|</div></li>
+              <li><div class="work3-subject work-subject">Typography</div></li>
+            </ul>
+            <div class="work3-main-text work-main-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </div>
+          </div>
+        </div>
+        
+        <div class="line"></div>
+
+      </section>
+
+    </section>
+
     <aside></aside>
   </main>
+
   <footer>
+    <ul class="social-midia">
+      <li><a href="#"><img src="images/fb.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="images/Group.png" alt="Instagram"></a></li>
+      <li><a href="#"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
+    </ul>
+    <div class="copyright">Copyright ©2020 All rights reserved</div>
   </footer>
+
 </body>
 </html>

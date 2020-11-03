@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <!-- Barra de navegação -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Home</h1>
+
+    <section>
+      <h2>Barra de Navegação</h2>
+      <p>Nesta aula vimos sobre como estruturar uma barra de navegação.</p>
+    </section>
+
+    <section id="tables">
+      <h2>Tabelas</h2>
+      <h3>Tabela de Alunos</h3>
+      <table border="1">
+        <!-- Cabeçalho da tabela -->
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Curso</th>
+            <th>Módulo</th>
+          </tr>
+        </thead>
+
+        <!-- Corpo/Conteúdo da tabela -->
+        <tbody>
+          <tr>
+            <td>Arthur</td>
+            <td>arthur@gmail.com</td>
+            <td>Pi Web Full-Stack</td>
+            <td>HTML & CSS</td>
+          </tr>
+
+          <tr>
+            <td>Ayrton</td>
+            <td>ayrton@gmail.com</td>
+            <td>Pi Web Full-Stack</td>
+            <td>HTML & CSS</td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Primeira mesclagem</td>
+            <td colspan="2">Segunda mesclagem</td>
+          </tr>
+
+          <tr>
+            <td>...</td>
+            <td  rowspan="2"></td>
+            <td></td>
+            <td>...</td>
+          </tr>
+
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exercício -->
+      <h3>Tabela de Exercício</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="2">Funcionalidades em Páginas HTML</th>
+          </tr>
+          <tr>
+            <th>Funcionalidade</th>
+            <th>Tags</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="5">Barra de navegação</td>
+            <td>header</td>
+          </tr>
+          <tr>
+            <td>nav</td>
+          </tr>
+          <tr>
+            <td>ul</td>
+          </tr>
+          <tr>
+            <td>li</td>
+          </tr>
+          <tr>
+            <td>a</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="figures">
+      <figure>
+        <img width="15%" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="Logo do HTML">
+        <figcaption>Logotipo do HTML 5</figcaption>
+      </figure>
+    </section>
+
+    <section id="forms-section">
+      <h2>Formulários</h2>
+
+      <form method="GET" action="sobre.html">
+        <div class="form-input">
+          <label for="nome">Nome:</label>
+          <input type="text" placeholder="Seu nome" id="nome" name="nome" value="Walisson">
+        </div>
+        <div class="form-input">
+          <input type="number" name="idade">
+        </div>
+        <div class="form-input">
+          <input type="password">
+        </div>
+        <div class="form-input">
+          <input type="date">
+        </div>
+        <div class="form-input">
+          <input type="time">
+        </div>
+        <div class="form-input">
+          <input type="email">
+        </div>
+        <div class="form-input">
+          <input type="hidden">
+        </div>
+        <div class="form-input">
+          <label for="programador">Programador:</label>
+          <input type="checkbox" id="programador" checked>
+        </div>
+        <div class="form-input">
+          <input type="range" min="0" max="100" value="10">
+        </div>
+        <div>
+          <label for="arquivo">File:</label>
+          <input type="file" id="arquivo">
+        </div>
+        <div>
+          <label for="url">URL:</label>
+          <input type="url" pattern="https://" id="url">
+        </div>
+        <div>
+          <input type="radio" name="gender" id="masculino">
+          <label for="masculino">Masculino</label>
+          
+          <input type="radio" name="gender" id="feminino">
+          <label for="feminino">Feminino</label>
+
+          <input type="radio" name="gender" id="outro">
+          <label for="outro">Outro</label>
+        </div>
+
+        <div>
+          <input type="submit" value="Enviar">
+        </div>
+
+        <div>
+          <label for="cor">Cor:</label>
+          <input type="color" id="cor">
+        </div>
+
+        <div>
+          <input type="reset">
+        </div>
+
+        <select id="select">
+          <option value="0" disabled selected>Selecione uma opção...</option>
+          <optgroup label="Web">
+            <option value="1">Pi Web Full-Stack</option>
+            <option value="4">Web Front-End & React</option>
+          </optgroup>
+          <optgroup label="Python">
+            <option value="2">Pi Data Science</option>
+            <option value="3">Python Pro</option>
+            <option value="5">Python for Finance</option>
+          </optgroup>
+        </select>
+
+        <div>
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+        </div>
+
+        <div>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <br>
+
+  <footer>
+    Copyright&copy; 2020
+  </footer>
+</body>
+</html>

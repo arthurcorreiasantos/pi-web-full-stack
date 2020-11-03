@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&display=swap');
+
+html,
+body{
+  background-color: #EDF7FA;
+  font-family: 'Heebo', sans-serif;
+}
+
+html{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+body{
+  width: 100%;
+}
+
+header #nav-bar{
+  left: 0%;
+  width: 100%;
+  height: 80px;
+  max-height: 80px;
+  background-color:#EDF7FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+}
+
+main{
+  position: relative;
+  top: 80px;
+}
+
+header #nav-bar a.home{
+  color:#00A8CC;
+  margin-left: 5rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+header #nav-bar .home :hover{
+  font-weight: 900;
+  color: black;
+  transition: 0.5s;
+}
+
+header #nav-bar .nav-list{
+  display: flex; /*Transforma os itens da lista em conteúdos dos containers*/
+  list-style: none; /*Tira os marcadores da lista*/
+  justify-content: flex-end; /*Alinha o conteúdo da lista à direita*/
+  padding-right: 5rem;
+}
+
+header #nav-bar .nav-list li{
+  margin: 1.5rem 0.8rem;
+  margin-right: 0;
+  margin-left: 1.5rem;
+  align-content: center;
+}
+
+header #nav-bar .nav-list .nav-item1 a{
+  color: #FF6464;
+}
+
+header #nav-bar .itens a{
+  text-decoration: none;
+  color:#00A8CC;
+}
+
+header #nav-bar .itens :hover{
+  font-weight: 900;
+  color: black;
+  transition: 0.5s;
+}
+
+header #nav-bar .fas{
+  display: none;
+}
+
+main #main-section{
+  background-color: white;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  color: #21243D;
+  margin-top: 2rem;
+}
+
+main #main-section .work-section{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+main #main-section .work-section .work{
+  display: flex;
+  flex-direction: row;
+}
+
+main #main-section .title{
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 300;
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
+
+main #main-section .work-section .work .work-text .work-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+main #main-section .work-section .work .work-image{
+  flex: 1;
+}
+
+main #main-section .work-section .work .work-secline{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main #main-section .work .work-text{
+  flex-direction: column;
+  flex: 3;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 0rem;
+  text-align: justify;
+}
+
+main #main-section .work .work-secline li{
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+main #main-section .work .work-secline .work-year{
+  background-color: #142850;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border-radius: 4rem;
+  padding: 0rem 0.5rem;
+  align-items: center;
+  display: flex;
+}
+
+main #main-section .work .work-secline .work-subject{
+  color: #b9b9b9;
+  font-size: 20px;
+  align-items: center;
+}
+
+main #main-section .work-section .line{
+  border-bottom:1px solid #E0E0E0;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color:#21243D;
+
+}
+
+footer .social-midia{
+  display: flex;
+  justify-content: space-around;
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 134px;
+}
+
+footer .social-midia li{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 4rem;
+  align-items: center;
+}
+
+footer .copyright{
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin-top: 26px;
+  margin-bottom: 4rem;
+  font-size: 14px;
+  font-weight: 300;
+  
+}
+
+@media (max-width: 792px){
+  header #nav-bar{
+    width: 100%;
+  }
+
+  header #nav-bar .home{
+    padding:0 1rem;
+    margin-left: 1rem;
+  }
+
+  header #nav-bar a.home{
+    margin-left: 1rem;
+  }
+
+  header #nav-bar .nav-list{
+    display: none;
+  }
+
+  header #nav-bar .fas{
+    padding-right: 1rem;
+    display: block;
+    color:#00A8CC;
+  }
+
+  footer .social-midia{
+    width: 75%;
+  }
+
+  main #main-section{
+    padding: 0.5rem;
+  }
+
+
+  main #main-section .work-section .work{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main #main-section .work-section .work .work-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main #main-section .work-section .work .work-image img{
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+
+  main #main-section .work-section .work .work-text{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+}

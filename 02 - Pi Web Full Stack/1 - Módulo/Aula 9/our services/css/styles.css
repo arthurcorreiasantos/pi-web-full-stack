@@ -1,0 +1,38 @@
+body{
+  background-color: #cadef5;
+}
+
+body #main-section{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width:70%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+body #main-section .box{
+  width: 25%;
+  height: 240px;
+  border-radius: 15%;
+  background-color: #FFFFFF;
+  border-color: white;
+  margin: 2rem 1rem;
+}
+
+body #main-section .box img{
+  padding: 15px 15px;
+}
+
+body #main-section .box .title{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+body #main-section .box .text{
+  font-size: 16px;
+  font-weight: 300;
+  padding:12px 10px;
+  color: gray;
+}

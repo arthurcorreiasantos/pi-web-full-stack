@@ -1,0 +1,127 @@
+#header .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#header .navbar .nav-list {
+  display: flex; /*Transforma os itens da lista em conteúdos dos containers*/
+  list-style: none; /*Tira os marcadores da lista*/
+  justify-content: flex-end; /*Alinha o conteúdo da lista à direita*/
+  align-items: center;
+}
+
+
+#header .navbar .nav-brand{
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+#header .navbar .nav-brand .logo{
+  width: 140px;
+}
+
+#header .navbar .nav-list li{
+  margin: 2rem;
+  align-content: center;
+}
+
+#header .navbar .nav-list .nav-link{
+  text-decoration: none;
+  color: #1F1534;
+  font-size: 18px;
+}
+
+#header .navbar .nav-list .nav-link.active{
+  text-decoration: none;
+  color: #1F1534;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#header .navbar .nav-toggle{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
+
+#header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  width: 100%;
+}
+
+#header .banner .content{
+  width: 30%;
+}
+
+#header .banner .header-image{
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .banner .header-image img{
+  width: 50%;
+  text-align: center;
+}
+
+/*Confirgura o H4*/
+
+#header .banner .content h4{
+  padding: 1.4rem 0rem;
+  line-height: 1.5rem;
+  color: grey;
+
+}
+
+#header .banner .content button{
+  border: none;
+  height: 40px;
+  width: 180px;
+  background-color: #458FF6;
+  margin-top: 1rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  color: white;
+}
+
+
+/* Breakpoint: 768px */
+@media (max-width: 768px) {
+
+  #header .navbar .nav-list {
+    display: none;
+  }
+
+  #header .banner {
+    flex-direction: column-reverse;
+    padding: 0 4rem;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #header .banner .content{
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #header .banner .header-image img{
+    width: 100%;
+    text-align: center;
+    
+  }
+  #header .navbar .nav-toggle{
+    display: block;
+  }
+
+}
+
