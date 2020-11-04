@@ -6,6 +6,7 @@ body{
   font-family: 'Heebo', sans-serif;
 }
 
+
 html{
   margin-left: 5%;
   margin-right: 5%;
@@ -65,7 +66,7 @@ header #nav-bar .nav-list li{
   transition: 0.5s;
 }
 
-header #nav-bar .nav-list .nav-item1 a{
+header #nav-bar .nav-list .nav-item3 a{
   color: #FF6464;
 }
 
@@ -85,84 +86,57 @@ header #nav-bar .fas{
   display: none;
 }
 
-main #main-section{
+main #contact-section .card{
   background-color: white;
-  padding: 0 5rem;
-  display: flex;
-  flex-direction: column;
-  color: #21243D;
-  margin-top: 2rem;
-}
-
-main #main-section .work-section{
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-}
-
-main #main-section .work-section .work{
-  display: flex;
-  flex-direction: row;
-}
-
-main #main-section .title{
   color: black;
-  font-size: 0.9rem;
-  font-weight: 300;
-  height: 60px;
-  align-items: center;
-  display: flex;
-}
-
-main #main-section .work-section .work .work-text .work-title{
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: left;
-}
-
-main #main-section .work-section .work .work-image{
-  flex: 1;
-}
-
-main #main-section .work-section .work .work-secline{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  width: 100%;
 }
 
-main #main-section .work .work-text{
-  flex-direction: column;
-  flex: 3;
-  align-items: center;
-  margin-left: 3rem;
-  margin-right: 0rem;
-  text-align: justify;
+main #contact-section .card .text .title{
+  font-size: 1.5rem;
 }
 
-main #main-section .work .work-secline li{
-  list-style: none;
-  justify-content: space-evenly;
-  padding: 1rem;
+main #contact-section .card .text .subtitle{
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
-main #main-section .work .work-secline .work-year{
-  background-color: #142850;
-  color: white;
-  font-size: 0.85rem;
-  font-weight: 400;
-  border-radius: 4rem;
-  padding: 0rem 0.5rem;
-  align-items: center;
+main #contact-section .card .form{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-main #main-section .work .work-secline .work-subject{
-  color: #b9b9b9;
-  font-size: 20px;
-  align-items: center;
+main #contact-section .card .form .form-card{
+display: flex;
+flex-direction: column;
 }
 
-main #main-section .work-section .line{
+main #contact-section .card .form .msg{
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main #contact-section .card .form .msg .submit{
+  background-color:#FF6464;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  padding: 8px;
+  border-color: transparent;
+  margin-top: 1rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  color: white;
+}
+
+.line{
   border-bottom:1px solid #E0E0E0;
   width: 100%;
   height: 1rem;
@@ -201,57 +175,4 @@ footer .copyright{
   margin-bottom: 4rem;
   font-size: 14px;
   font-weight: 300;
-  
-}
-
-@media (max-width: 792px){
-  header #nav-bar{
-    width: 100%;
-  }
-
-  header #nav-bar a.home{
-    padding:0 1rem;
-    margin-left: 1rem;
-  }
-
-  header #nav-bar .nav-list{
-    display: none;
-  }
-
-  header #nav-bar .fas{
-    padding-right: 1rem;
-    display: block;
-    color:#00A8CC;
-  }
-
-  footer .social-midia{
-    width: 75%;
-  }
-
-  main #main-section{
-    padding: 0.5rem;
-  }
-
-  main #main-section .work-section .work{
-    display: flex;
-    flex-direction: column;
-  }
-
-  main #main-section .work-section .work .work-image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  main #main-section .work-section .work .work-image img{
-    width: 250px;
-    margin-bottom: 1rem;
-  }
-
-  main #main-section .work-section .work .work-text{
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-  }
-
 }
